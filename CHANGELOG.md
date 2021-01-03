@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/bromso/school-frontend/compare/v1.1.0...v1.2.0) (2021-01-03)
+
+
+### Features
+
+* add commitizen ([123e417](https://github.com/bromso/school-frontend/commit/123e417b06e7b3108969c61df4d9cc5f973f7f24))
+
 # [1.1.0](https://github.com/bromso/school-frontend/compare/v1.0.1...v1.1.0) (2021-01-03)
 
 
