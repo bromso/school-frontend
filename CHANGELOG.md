@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/bromso/school-frontend/compare/v1.0.0...v1.0.1) (2021-01-03)
+
+
+### Bug Fixes
+
+* change folder & add yarn.lock ([748c1ad](https://github.com/bromso/school-frontend/commit/748c1ad6fe303f0d5cdf15f70bf9ce935d82142c))
+
 # 1.0.0 (2021-01-03)
 
 
