@@ -1,19 +1,19 @@
 {
   "name": "school-frontend",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "Repository for School project & assignments",
   "scripts": {
-		"start": "react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-		"eject": "react-scripts eject",
-		"semantic-release": "semantic-release"
+    "eject": "react-scripts eject",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/bromso/school-frontend.git"
-	},
-	"dependencies": {
+  },
+  "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -31,9 +31,9 @@
     "@semantic-release/github": "^7.1.1",
     "@semantic-release/npm": "^7.0.9",
     "@semantic-release/release-notes-generator": "^9.0.1",
-		"semantic-release": "^17.3.1",
-		"cz-conventional-changelog": "^3.3.0",
-		"husky": "^4.3.0"
+    "semantic-release": "^17.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^4.3.0"
   },
   "keywords": [
     "school-project",
