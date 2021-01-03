@@ -1,3 +1,13 @@
+# [2.0.0](https://github.com/bromso/school-frontend/compare/v1.3.0...v2.0.0) (2021-01-03)
+
+
+* Merge pull request #46 from bromso/next ([a026465](https://github.com/bromso/school-frontend/commit/a026465dab9ea5bb6da0524af78abad066f6f1de)), closes [#46](https://github.com/bromso/school-frontend/issues/46)
+
+
+### BREAKING CHANGES
+
+* add create-react-app
+
 # [1.3.0](https://github.com/bromso/school-frontend/compare/v1.2.0...v1.3.0) (2021-01-03)
 
 
