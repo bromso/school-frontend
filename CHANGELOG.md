@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/bromso/school-frontend/compare/v1.0.1...v1.1.0) (2021-01-03)
+
+
+### Features
+
+* add commitlint ([645cdbe](https://github.com/bromso/school-frontend/commit/645cdbe7d08c02aebc2f296feacb355e7ad2bef3))
+
 ## [1.0.1](https://github.com/bromso/school-frontend/compare/v1.0.0...v1.0.1) (2021-01-03)
 
 
