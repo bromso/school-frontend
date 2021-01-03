@@ -18,14 +18,14 @@ jobs:
           node-version: 12
       - uses: actions/cache@v2
         with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          path: ~/.yarn
+          key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-node-
       - name: Install Dependencies
-        run: npm install
+        run: yarn
       - name: Test
-        run: npm test
+        run: yarn test
         env:
           ES_CLOUD_ID: ${{ secrets.ES_CLOUD_ID }}
           ES_CLOUD_USER: ${{ secrets.ES_CLOUD_USER }}
