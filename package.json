@@ -51,11 +51,5 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bromso/school-frontend/issues"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
 	}
 }
