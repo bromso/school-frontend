@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/bromso/school-frontend/compare/v1.2.0...v1.3.0) (2021-01-03)
+
+
+### Features
+
+* add husky ([b296d78](https://github.com/bromso/school-frontend/commit/b296d7819097db7090930e5dd0b0dd89548332ca))
+
 # [1.2.0](https://github.com/bromso/school-frontend/compare/v1.1.0...v1.2.0) (2021-01-03)
 
 
