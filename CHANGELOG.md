@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/bromso/school-frontend/compare/v2.0.0...v2.1.0) (2021-01-03)
+
+
+### Features
+
+* restructure create-react-app ([559ffa9](https://github.com/bromso/school-frontend/commit/559ffa9db1eda2b336d4ed58b62ea772ca24aeb5))
+
 # [2.0.0](https://github.com/bromso/school-frontend/compare/v1.3.0...v2.0.0) (2021-01-03)
 
 
