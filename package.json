@@ -2,7 +2,6 @@
   "name": "school-frontend",
   "version": "0.0.0-development",
   "description": "Repository for School project & assignments",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
     "semantic-release": "semantic-release"
