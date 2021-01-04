@@ -1,7 +1,7 @@
 import { Routing } from './routes/Routing'
 import { Navbar } from './components/organisms/navbar/'
 import { Provider } from './shared/Provider'
-import './app.css'
+import './shared/app.css'
 
 function App() {
   return (
