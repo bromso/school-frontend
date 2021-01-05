@@ -1,15 +1,16 @@
+import React from 'react'
 import { Routing } from './routes/Routing'
-import { Navbar } from './components/organisms/navbar/'
-import { Provider } from './shared/Provider'
+import { Navbar } from './components/organisms/Navbar'
+import { UserProvider } from './shared/global/provider/UserProvider'
 import './shared/app.css'
 
 function App() {
   return (
-    <Provider>
+    <UserProvider>
       <Routing>
-        <Navbar />
+				<Navbar />
       </Routing>
-    </Provider>
+    </UserProvider>
   );
 }
 
