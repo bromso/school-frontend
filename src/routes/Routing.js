@@ -1,20 +1,20 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { home } from '../views/home';
-import { about } from '../views/about';
-import { Login } from '../views/login';
-import { notfound } from '../views/notfound';
+import { Home } from '../views/Home';
+import { About } from '../views/About';
+import { Signin } from '../views/Signin';
+import { Notfound } from '../views/Notfound';
 
 export const Routing = (props) => {
     return (
         <Router>
             {props.children}
             <Switch>
-                <Route exact path='/home' component={home} />
-                <Route exact path='/about' component={about} />
-                <Route exact path='/login' component={Login} />
-								<Route exact path="/" component={home} />
-                <Route component={notfound} />
+                <Route exact path='/home' component={Home} />
+                <Route exact path='/about' component={About} />
+                <Route exact path='/signin' component={Signin} />
+								<Route exact path="/" component={Home} />
+                <Route component={Notfound} />
             </Switch>
         </Router>
     )
