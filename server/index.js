@@ -6,5 +6,5 @@ const app = express()
 const port = process.env.PORT
 
 app.listen(port, () => {
-	console.log('Server is working and available on port ${port}')
+	console.log(`Server is working and available on port ${port}`)
 })
