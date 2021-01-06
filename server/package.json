@@ -16,7 +16,8 @@
     "@semantic-release/git": "^9.0.0",
     "@semantic-release/github": "^7.1.1",
     "@semantic-release/npm": "^7.0.9",
-    "@semantic-release/release-notes-generator": "^9.0.1"
+    "@semantic-release/release-notes-generator": "^9.0.1",
+    "eslint": "^7.17.0"
   },
   "author": "Jonas Bröms <jonasbroms@icloud.com> (http://jonasbroms.com/)",
   "license": "MIT",
