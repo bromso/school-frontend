@@ -41,6 +41,13 @@ const Avatar = styled.img`
 export const Profile = () => {
 	const history = useHistory()
 	const [authenticatedUser, setAuthenticatedUser] = useContext(UserContext)
+
+	const logout = () => {
+		localStorage.removeItem('username')
+		setAuthenticatedUser(false)
+		history.push('/')
+	}
+
 	return (
 		<>
 			<Wrapper>
@@ -49,7 +56,7 @@ export const Profile = () => {
 				<DropdownMenu>
 					<DropdownButton onClick={() => history.push('/settings')}>Settings</DropdownButton>
 					<DropdownButton onClick={() => history.push('/profile')}>Profile</DropdownButton>
-					<DropdownButton>Logout</DropdownButton>
+					<DropdownButton onClick={() => logout()}>Logout</DropdownButton>
 				</DropdownMenu>
 			</Wrapper>
 		</>
