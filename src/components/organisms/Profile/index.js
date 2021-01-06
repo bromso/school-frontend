@@ -2,16 +2,36 @@ import React, { useContext } from 'react'
 import { UserContext } from '../../../shared/global/provider/UserProvider'
 import styled from 'styled-components'
 
-const Button = styled.span`
+const DropdownButton = styled.a`
+	background: #f1f1f1;
+	display: block;
+	padding: 14px 16px;
+	border: 2px solid palevioletred;
+	border-radius: 3px;
+	cursor: pointer;
+`
+
+const DropdownMenu = styled.div`
+	display: none;
+	position: absolute;
+	min-width: 200px;
+	z-index: 10;
+	margin-left: 200px;
+`
+
+const Wrapper = styled.span`
   background: transparent;
   border-radius: 3px;
   border: 2px solid palevioletred;
   color: palevioletred;
   margin: 0 1em;
 	padding: 0.25em 1em;
+	&:hover ${DropdownMenu} {
+    display: block;
+  }
 `
 
-const Image = styled.img`
+const Avatar = styled.img`
 	width: 2vh;
 	border-radius: 50%;
 	align-self: center;
@@ -21,11 +41,15 @@ export const Profile = () => {
 	const [authenticatedUser, setAuthenticatedUser] = useContext(UserContext)
 	return (
 		<>
-
-			<Button>
-				<Image src={"https://www.thispersondoesnotexist.com/image"} alt="" />
+			<Wrapper>
+				<Avatar src={"https://www.thispersondoesnotexist.com/image"} alt="" />
 				{authenticatedUser}
-			</Button>
+				<DropdownMenu>
+					<DropdownButton>Settings</DropdownButton>
+					<DropdownButton>Profile</DropdownButton>
+					<DropdownButton>Logout</DropdownButton>
+				</DropdownMenu>
+			</Wrapper>
 		</>
 	)
 }
