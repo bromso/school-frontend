@@ -39,6 +39,9 @@ export const Navbar = () => {
 				<Button	onClick={()=>history.push('/about')}>
 					About
 				</Button>
+				<Button	onClick={()=>history.push('/recipe')}>
+					Recipe
+				</Button>
 				{displayUserIfAuthenticated()}
 			</Background>
 		</>
