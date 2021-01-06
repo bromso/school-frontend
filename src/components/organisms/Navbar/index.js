@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { useHistory } from 'react-router-dom'
 import { UserContext } from '../../../shared/global/provider/UserProvider'
 import { Profile } from '../../organisms/Profile'
+import RoutingPath from '../../../routes/RoutingPath'
 import styled from 'styled-components'
 
 const Background = styled.div`
@@ -27,19 +28,19 @@ export const Navbar = () => {
 	const displayUserIfAuthenticated = () => {
 		return(authenticatedUser)
 			? <Profile />
-			: <Button	onClick={()=>history.push('/signin')}>Sign in</Button>
+			: <Button	onClick={()=>history.push(RoutingPath.Signin)}>Sign in</Button>
 	}
 
 	return (
 		<>
 			<Background>
-				<Button	onClick={()=>history.push('/home')}>
+				<Button	onClick={()=>history.push(RoutingPath.Home)}>
 					Home
 				</Button>
-				<Button	onClick={()=>history.push('/about')}>
+				<Button	onClick={()=>history.push(RoutingPath.About)}>
 					About
 				</Button>
-				<Button	onClick={()=>history.push('/recipe')}>
+				<Button	onClick={()=>history.push(RoutingPath.Recipe)}>
 					Recipe
 				</Button>
 				{displayUserIfAuthenticated()}
