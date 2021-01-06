@@ -10,6 +10,7 @@ const Background = styled.div`
 `
 
 const Button = styled.span`
+	cursor: pointer;
   background: transparent;
   border-radius: 3px;
   border: 2px solid palevioletred;
@@ -32,8 +33,12 @@ export const Navbar = () => {
 	return (
 		<>
 			<Background>
-				<Button	onClick={()=>history.push('/home')}>Home</Button>
-				<Button	onClick={()=>history.push('/about')}>About</Button>
+				<Button	onClick={()=>history.push('/home')}>
+					Home
+				</Button>
+				<Button	onClick={()=>history.push('/about')}>
+					About
+				</Button>
 				{displayUserIfAuthenticated()}
 			</Background>
 		</>
