@@ -12,5 +12,6 @@ export default {
 	Recipe,
 	Signin,
 	Profile,
-	Settings
+	Settings,
+	Notfound
 }
