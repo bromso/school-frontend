@@ -1,3 +1,17 @@
+# [2.2.0](https://github.com/bromso/school-frontend/compare/v2.1.0...v2.2.0) (2021-01-03)
+
+
+### Features
+
+* add react-router-dom ([cd29a96](https://github.com/bromso/school-frontend/commit/cd29a96e5997bee24c13b322ae51a1d38756df38))
+
+# [2.1.0](https://github.com/bromso/school-frontend/compare/v2.0.0...v2.1.0) (2021-01-03)
+
+
+### Features
+
+* restructure create-react-app ([559ffa9](https://github.com/bromso/school-frontend/commit/559ffa9db1eda2b336d4ed58b62ea772ca24aeb5))
+
 # [2.0.0](https://github.com/bromso/school-frontend/compare/v1.3.0...v2.0.0) (2021-01-03)
 
 
