@@ -13,6 +13,14 @@ import RoutingPath from '../../routes/RoutingPath'
 export const Routing = (props) => {
 	const [authenticatedUser, setAuthenticatedUser] = useContext(UserContext)
 
+	const blockRouteIfAuthenticated = (navigateToView) => {
+		return authenticatedUser ? Home : navigateToView
+	}
+
+	const blockRouteINotfAuthenticated = (navigateToView) => {
+		return !authenticatedUser ? Signin : navigateToView
+	}
+
 	const checkIfUserIsAuthenticatedInBrowser = () => {
 		setAuthenticatedUser(localStorage.getItem("username"))
 	}
@@ -28,9 +36,9 @@ export const Routing = (props) => {
 					<Route exact path={RoutingPath.Home} component={Home} />
 					<Route exact path={RoutingPath.About} component={About} />
 					<Route exact path={RoutingPath.Recipe} component={Recipe} />
-					<Route exact path={RoutingPath.Signin} component={Signin} />
-					<Route exact path={RoutingPath.Settings} component={Settings} />
-					<Route exact path={RoutingPath.Profile} component={Profile} />
+					<Route exact path={RoutingPath.Signin} component={blockRouteIfAuthenticated(Signin)} />
+					<Route exact path={RoutingPath.Settings} component={blockRouteINotfAuthenticated(Settings)} />
+					<Route exact path={RoutingPath.Profile} component={blockRouteINotfAuthenticated(Profile)} />
 					<Route exact path={RoutingPath.Home} component={Home} />
 					<Route component={Notfound} />
 			</Switch>
