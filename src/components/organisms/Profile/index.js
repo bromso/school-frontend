@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { UserContext } from '../../../shared/global/provider/UserProvider'
+import { useHistory } from 'react-router-dom'
 import styled from 'styled-components'
 
 const DropdownButton = styled.a`
@@ -38,6 +39,7 @@ const Avatar = styled.img`
 `
 
 export const Profile = () => {
+	const history = useHistory()
 	const [authenticatedUser, setAuthenticatedUser] = useContext(UserContext)
 	return (
 		<>
@@ -45,8 +47,8 @@ export const Profile = () => {
 				<Avatar src={"https://www.thispersondoesnotexist.com/image"} alt="" />
 				{authenticatedUser}
 				<DropdownMenu>
-					<DropdownButton>Settings</DropdownButton>
-					<DropdownButton>Profile</DropdownButton>
+					<DropdownButton onClick={() => history.push('/settings')}>Settings</DropdownButton>
+					<DropdownButton onClick={() => history.push('/profile')}>Profile</DropdownButton>
 					<DropdownButton>Logout</DropdownButton>
 				</DropdownMenu>
 			</Wrapper>
