@@ -4,6 +4,7 @@ import { Home } from '../views/Home';
 import { About } from '../views/About';
 import { Signin } from '../views/Signin';
 import { Settings } from '../views/Settings';
+import { Profile } from '../views/Profile';
 import { Notfound } from '../views/Notfound';
 import { UserContext } from '../shared/global/provider/UserProvider'
 
@@ -26,6 +27,7 @@ export const Routing = (props) => {
 					<Route exact path='/about' component={About} />
 					<Route exact path='/signin' component={Signin} />
 					<Route exact path='/settings' component={Settings} />
+					<Route exact path='/profile' component={Profile} />
 					<Route exact path="/" component={Home} />
 					<Route component={Notfound} />
 			</Switch>
