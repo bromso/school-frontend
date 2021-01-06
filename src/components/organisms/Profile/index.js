@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { UserContext } from '../../../shared/global/provider/UserProvider'
 import { useHistory } from 'react-router-dom'
+import RoutingPath from '../../../routes/RoutingPath'
 import styled from 'styled-components'
 
 const DropdownButton = styled.a`
@@ -54,8 +55,8 @@ export const Profile = () => {
 				<Avatar src={"https://www.thispersondoesnotexist.com/image"} alt="" />
 				{authenticatedUser}
 				<DropdownMenu>
-					<DropdownButton onClick={() => history.push('/settings')}>Settings</DropdownButton>
-					<DropdownButton onClick={() => history.push('/profile')}>Profile</DropdownButton>
+					<DropdownButton onClick={() => history.push(RoutingPath.Settings)}>Settings</DropdownButton>
+					<DropdownButton onClick={() => history.push(RoutingPath.Profile)}>Profile</DropdownButton>
 					<DropdownButton onClick={() => logout()}>Logout</DropdownButton>
 				</DropdownMenu>
 			</Wrapper>
