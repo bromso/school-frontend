@@ -1,7 +1,10 @@
 import express from 'express'
+import dotenv from 'dotenv'
 
+dotenv.config()
 const app = express()
+const port = process.env.PORT
 
-app.listen(3001, () => {
-	console.log("Server is working and available on port 3001")
+app.listen(port, () => {
+	console.log("Server is working and available on port ${port}")
 })

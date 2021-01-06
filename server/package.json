@@ -2,8 +2,8 @@
   "name": "server",
   "version": "1.0.0",
   "description": "Server folder for School project & assignments",
-	"main": "index.js",
-	"type": "module",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -38,6 +38,7 @@
     "server"
   ],
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1"
   }
 }
