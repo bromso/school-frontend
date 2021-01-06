@@ -8,7 +8,7 @@ import { Settings } from '../../views/Settings';
 import { Profile } from '../../views/Profile';
 import { Notfound } from '../../views/Notfound';
 import { UserContext } from '../../shared/global/provider/UserProvider'
-import RoutingPath from '../../routes/RoutingPath'
+import RoutingPath from '../RoutingPath'
 
 export const Routing = (props) => {
 	const [authenticatedUser, setAuthenticatedUser] = useContext(UserContext)

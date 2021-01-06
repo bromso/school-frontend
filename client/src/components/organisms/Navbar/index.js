@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { useHistory } from 'react-router-dom'
 import { UserContext } from '../../../shared/global/provider/UserProvider'
-import { Profile } from '../../organisms/Profile'
+import { Profile } from '../Profile'
 import RoutingPath from '../../../routes/RoutingPath'
 import styled from 'styled-components'
 

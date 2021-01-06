@@ -1,7 +1,7 @@
 {
-  "name": "school-frontend",
+  "name": "client",
   "version": "2.2.0",
-  "description": "Repository for School project & assignments",
+  "description": "Client folder for School project & assignments",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -50,7 +50,8 @@
     "reactjs",
     "react-router",
 		"mongodb",
-		"axios"
+		"axios",
+		"client"
   ],
   "author": "Jonas Bröms <jonasbroms@icloud.com> (http://jonasbroms.com/)",
   "license": "MIT",

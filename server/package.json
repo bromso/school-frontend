@@ -1,0 +1,29 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Server folder for School project & assignments",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jonas Bröms <jonasbroms@icloud.com> (http://jonasbroms.com/)",
+	"license": "MIT",
+	"repository": {
+    "type": "git",
+    "url": "https://github.com/bromso/school-frontend.git"
+	},
+	"bugs": {
+    "url": "https://github.com/bromso/school-frontend/issues"
+  }
+	"keywords": [
+    "school-project",
+    "school-assignment",
+    "nodejs",
+    "mern-stack",
+    "javascript",
+		"express",
+		"mongoose",
+		"mongodb",
+		"server"
+  ],
+}
