@@ -25,7 +25,7 @@ const getAllUsers = async (req, res) => {
 
 const getUserWithId = async (req, res) => {
 	try {
-		const response = await UserModel.findById(req.params.usedId)
+		const response = await UserModel.findById(req.params.userId)
 		res.status(200).send(response)
 	} catch (error) {
 		res.status(500).send({
