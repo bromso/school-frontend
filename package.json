@@ -3,32 +3,11 @@
 	"private": true,
   "version": "1.0.0",
   "description": "Startup the project",
-  "main": "index.js",
-	"type": "module",
 	"workspaces": [
 		"packages/*"
 	],
-  "scripts": {
-		"start": "node ."
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/bromso/school-frontend.git"
-  },
-  "author": "Jonas Bröms <jonasbroms@icloud.com> (http://jonasbroms.com/)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/bromso/school-frontend/issues"
-  },
-  "keywords": [
-    "school-project",
-    "school-assignment",
-    "nodejs",
-    "mern-stack",
-    "javascript",
-    "express",
-    "mongoose",
-    "mongodb",
-    "server"
-  ]
+	"engines" : {
+		"node" : "15.5.1",
+		"yarn" : "1.22.10"
+	}
 }
