@@ -37,6 +37,8 @@ Repository for School project & assignments
 - [Create Documentation Architecture](https://github.com/bromso/school-frontend/milestone/2)
 - [Assignment #2](https://github.com/bromso/school-frontend/milestone/5)
 - [Assignment #3](https://github.com/bromso/school-frontend/milestone/6)
+- [Assignment #4](https://github.com/bromso/school-frontend/milestone/9)
+- [Assignment #5](https://github.com/bromso/school-frontend/milestone/10)
 - [Assignment #6](https://github.com/bromso/school-frontend/milestone/7)
 
 ## Quick start
@@ -146,78 +148,41 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ┃    └┄┄ 📁 workflows
 ┃        └┄┄ 📄 semantic-release.yml
 ┃
-┠── 📁 public
-┃   ├┄┄ 📁 fonts
-┃   └┄┄ 📄 index.html
+┠── 📁 .vscode
+┃   └┄┄ 📄 settings.json
 ┃
-┠── 📁 src
-┃   ├── 📁 components
-┃   │   ├┄┄ 📁 atoms
-┃   │   ├┄┄ 📁 molecules
-┃   │   ├┄┄ 📁 organisms
-┃   │   └┄┄ 📁 templates
-┃   ├┄┄ 📁 theme
-┃   └┄┄ 📁 pages
+┠── 📁 docs
+┃   └┄┄ 📁 img
 ┃
-┠┄┄ 🦔 .browserslistrc
+┠── 🖥️ client
+┃
+┠── ⚙️ server
+┃
 ┠┄┄ 🐭 .editorconfig
-┠┄┄ 🐺 .huskyrc
 ┠┄┄ 📝 README.md
 ┠┄┄ 📝 CONTRIBUTING.md
-┠┄┄ 📝 CHANGELOG.md
 ┠┄┄ 📦 package.json
 ┖┄┄ 🧶 yarn.json
 
 ```
 
-### Dependencies
+### Model, View, Controller (MVC) Design Pattern
 
-I recommended to have these CLI's and dependencies in order to download and install everything without a clitch.
-
-| Logo                                        | Name                                       | Comments                                             |
-| ------------------------------------------- | ------------------------------------------ | ---------------------------------------------------- |
-| ![Homebrew Logo](docs/img/homebrew.png)     | [Homebrew](https://brew.sh/)               | Package manager (for Mac)                            |
-| ![NVM Logo](docs/img/nvm.png)               | [NVM](https://github.com/nvm-sh/nvm)       | Node & NPM Version Manager                           |
-| ![NodeJS Logo](docs/img/nodejs.png)         | [NodeJS](https://nodejs.org/)              | JavaScript Runtime Engine                            |
-| ![NPMJS Logo](docs/img/npmjs.png)           | [NPMJS](https://www.npmjs.com/)            | Node Page Manager                                    |
-| ![Storybook Logo](docs/img/storybookjs.png) | [Storbyook](https://storybook.js.org/)     | UI Component Explorer                                |
-| ![Git Logo](docs/img/git.png)               | [Git](https://git-scm.com)                 | Distributed version control system                   |
-| ![Markdown Logo](docs/img/markdown.png)     | [Markdown](https://www.markdownguide.org/) | Markup language for formating virtually any document |
-
-### Tech Stack
-
-### Required
-
-The project uses these technologies.
-
-| Logo                                                                                              | Name                                                                      | Category           | Description              |
-| ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ------------------ | ------------------------ |
-| <img src="https://cdn.svgporn.com/logos/html-5.svg" alt="HTML5 Logo" height="48">                 | [HTML5](https://html.spec.whatwg.org/)                                    | Markup             | Language                 |
-| <img src="https://cdn.svgporn.com/logos/css-3.svg" alt="CSS3 Logo" height="48" />                 | [CSS3](https://www.w3.org/TR/CSS/)                                        | Styling            | Language                 |
-| ![Husky Logo](docs/img/husky.png)                                                                 | [Husky](https://typicode.github.io/husky/)                                | Git                | Message validator        |
-| ![Commitlint Logo](docs/img/commitlint.png)                                                       | [Commitlint](https://commitlint.js.org/)                                  | Git                | Linter                   |
-| ![Commitizen Logo](docs/img/commitizen.png)                                                       | [Commitizen](https://github.com/commitizen)                               | Git                | Wizard tool for commits  |
-| ![Semantic-Release Logo](docs/img/semanticrelease.png)                                            | [Semantic-Release](https://semantic-release.gitbook.io/semantic-release/) | Git                | Versioning tool          |
-| <img src="https://cdn.svgporn.com/logos/eslint.svg" alt="" ESLint Logo height="48" />             | [ESLint](https://eslint.org/)                                             | Coding conventions | JavaScript linter        |
-| ![EditorConfig Logo](docs/img/editorconfig.png)                                                   | [EditorConfig](https://editorconfig.org/)                                 | Coding conventions | IDE coding styles        |
-| <img src="https://cdn.svgporn.com/logos/prettier.svg" alt="Prettier Logo" height="48" />          | [Prettier](https://prettier.io/)                                          | Coding conventions | Code formatter           |
-| <img src="https://cdn.svgporn.com/logos/react.svg" alt="ReactJS Logo" height="48" />              | [ReactJS](https://reactjs.org/)                                           | Frontend           | JavaScript library       |
-| <img src="https://cdn.svgporn.com/logos/browserslist.svg" alt="Browserslist" height="48" />       | [Browserslist](https://github.com/browserslist)                           | Frontend           | Share targeted browsers  |
-| <img src="https://cdn.svgporn.com/logos/material-ui.svg" alt="Material-UI Logo" height="48" />    | [Material-UI](https://material-ui.com)                                    | Frontend           | Design System            |
-| <img src="https://cdn.svgporn.com/logos/storybook-icon.svg" alt="StorybookJS Logo" height="48" /> | [Storbyook](https://storybook.js.org/)                                    | Documentation      | UI Component Explorer    |
-| <img src="https://cdn.svgporn.com/logos/graphql.svg" alt="GraphQL" height="48" />                 | [GraphQL](http://graphql.org/)                                            | Database           | Query Language for API's |
-
-### Optional
-
-| Logo                                                                                            | Name                                   | Category       | Description                                    |
-| ----------------------------------------------------------------------------------------------- | -------------------------------------- | -------------- | ---------------------------------------------- |
-| <img src="https://cdn.svgporn.com/logos/chromatic-icon.svg" alt="Chromatic Logo" height="48" /> | [Chromatic](https://www.chromatic.com) | Documentation  | Feedback, Visual testing, & Documentation Tool |
-| <img src="https://cdn.svgporn.com/logos/figma.svg" alt="Figma" height="48" />                   | [Figma](https://www.figma.com)         | Design         | Graphical Design Tool                          |
-| <img src="https://cdn.svgporn.com/logos/docker-icon.svg" alt="Docker" height="48" />            | [Docker](https://www.docker.com/)      | Virtualization | Container Platform                             |
-
-### Design Pattern
-
-All components, templates & pages are trying to follow the [Atomic Design Methodology](https://github.com/bromso/school-frontend/blob/main/DESIGN.md)
+```text
+            ┏━━━━━━━━━━┓             ┏━━━━━━━━━━┓
+    ┄┄┄┄┄┄┄┄◉    ⚙️     ┃        ┄┄┄┄◉    🛢️     ┃
+   ┆        ┃Controller┃        ┆    ┃ Database ┃
+   ┆        ┗━━○━━━◉━━━┛        ┆    ┗━━○━━━━━━━┛
+┏━━◉━━━━━━━┓   ┆   ┆    ┏━━━━━━━◉━━┓    ┆
+┃    💻    ○┄┄┄      ┄┄┄◉    ⚛️     ○┄┄┄┄
+┃   View   ┃            ┃   Model  ┃
+┗━━━━◉━━━━━┛            ┗━━━━━━━━━━┛
+     ┆
+┏━━━━◉━━━━━┓
+┃    🧍    ┃
+┃   User   ┃
+┗━━━━━━━━━━┛
+```
 
 ## Contributing
 
