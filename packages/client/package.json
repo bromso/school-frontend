@@ -3,11 +3,13 @@
   "version": "2.2.0",
   "description": "Client folder for School project & assignments",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "serve -s build",
+    "develop": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "semantic-release": "semantic-release"
+		"semantic-release": "semantic-release",
+		"postinstall": "yarn build"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,7 @@
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
+    "serve": "^11.3.2",
     "web-vitals": "^0.2.4"
   },
   "devDependencies": {
@@ -43,9 +46,9 @@
     "react",
     "reactjs",
     "react-router",
-		"mongodb",
-		"axios",
-		"client"
+    "mongodb",
+    "axios",
+    "client"
   ],
   "author": "Jonas Bröms <jonasbroms@icloud.com> (http://jonasbroms.com/)",
   "license": "MIT",
