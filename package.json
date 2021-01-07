@@ -1,31 +1,19 @@
 {
-  "name": "server",
+	"name": "monorepo",
+	"private": true,
   "version": "1.0.0",
-  "description": "Server folder for School project & assignments",
+  "description": "Startup the project",
   "main": "index.js",
-  "type": "module",
+	"type": "module",
+	"workspaces": [
+		"packages/*"
+	],
   "scripts": {
-    "test": "mocha 'tests/**'"
+		"start": "node ."
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/bromso/school-frontend.git"
-  },
-  "devDependencies": {
-    "chai": "^4.2.0",
-    "chai-http": "^4.3.0",
-    "eslint": "^7.17.0",
-    "eslint-plugin-react": "^7.22.0",
-    "mocha": "^8.2.1",
-    "nodemon": "^2.0.7"
-  },
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "helmet": "^4.3.1",
-    "mongoose": "^5.11.10",
-    "morgan": "^1.10.0"
   },
   "author": "Jonas Bröms <jonasbroms@icloud.com> (http://jonasbroms.com/)",
   "license": "MIT",
