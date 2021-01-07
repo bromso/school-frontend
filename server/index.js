@@ -7,7 +7,7 @@ import Configuration from './config/index.js'
 
 dotenv.config()
 const app = express()
-const port = process.env.PORT
+
 app.use(helmet())
 app.use(morgan('common'))
 
@@ -19,7 +19,4 @@ app.use(middlewares.notFound)
 app.use(middlewares.errorHandler)
 
 Configuration.connectToDatabase()
-
-app.listen(port, () => {
-	console.log(`Server is working and available on port ${port}`)
-})
+Configuration.connectToPort()
