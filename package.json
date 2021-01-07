@@ -6,6 +6,9 @@
 	"workspaces": [
 		"packages/*"
 	],
+	"scripts": {
+		"start": "echo hello"
+	},
 	"engines" : {
 		"node" : "15.5.1",
 		"yarn" : "1.22.10"
