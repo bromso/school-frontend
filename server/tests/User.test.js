@@ -59,10 +59,29 @@ const getAllUsers = () => {
 	})
 }
 
+const updateUser = () => {
+	describe('Updating(PUT) a user in the database', () => {
+		test('Expecting a user to be updated', (done) => {
+			Chai.request(app)
+				.put(`/user/${userId}`)
+				.send(user)
+				.end((error, response) => {
+					response.should.have.status(StatusCode.OK)
+					response.body.should.be.a('object')
+					response.body.should.have.property('_id').eq(userId)
+					response.body.should.have.property('username').eq(user.username)
+					response.body.should.have.property('password').eq(user.password)
+					done()
+				})
+		})
+	})
+}
+
 
 
 describe('TEST THE USER_API ROUTE', () => {
 	testingNoneExistentRoute()
 	createUser()
 	getAllUsers()
+	updateUser()
 })
