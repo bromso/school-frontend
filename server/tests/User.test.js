@@ -44,9 +44,25 @@ const createUser = () => {
 	})
 }
 
+const getAllUsers = () => {
+	describe('Fetching all users(GET)', () => {
+		test('Expecting to return all the users', (done) => {
+			Chai.request(app)
+				.get('/user')
+				.end((error, response) => {
+					response.should.have.status(StatusCode.OK)
+					response.body.should.be.a('array')
+					response.body.length.should.be.eq(response.body.length)
+					done()
+				})
+		})
+	})
+}
+
 
 
 describe('TEST THE USER_API ROUTE', () => {
 	testingNoneExistentRoute()
 	createUser()
+	getAllUsers()
 })
