@@ -1,5 +1,4 @@
-import UserModel from '../models/User.model'
-import body from '../models/User.model'
+import UserModel from '../models/User.model.js'
 
 const createUser = async (req, res) => {
 	const user = new UserModel({
@@ -8,8 +7,8 @@ const createUser = async (req, res) => {
 	})
 
 	try {
-		const response = user.save()
-		response.status(201).send(response)
+		const response = await user.save()
+		res.status(201).send(response)
 	} catch (error) {
 		res.status(500).send({message: error.message})
 	}
