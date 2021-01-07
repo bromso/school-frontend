@@ -77,11 +77,23 @@ const updateUser = () => {
 	})
 }
 
-
+const deleteUser = () => {
+	describe('Deleting(DELETE) a user in the database', () => {
+		test('Expecting a user to be deleted', (done) => {
+			Chai.request(app)
+				.delete(`/user/${userId}`)
+				.end((error, response) => {
+					response.should.have.status(StatusCode.OK)
+					done()
+				})
+		})
+	})
+}
 
 describe('TEST THE USER_API ROUTE', () => {
 	testingNoneExistentRoute()
 	createUser()
 	getAllUsers()
 	updateUser()
+	deleteUser()
 })
