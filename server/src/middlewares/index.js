@@ -1,10 +1,14 @@
+import dotenv from 'dotenv'
+
+dotenv.config()
+
 const errorHandler = (error, req, res, next) => {
 	const statuscode = res.statusCode === 200 ? 500 : res.statusCode
 	res.status(statuscode)
 	res.json({
 		statuscode: statuscode,
 		message: error.message,
-		stacktrace: error.stack,
+		stacktrace: process.env.ENVIROMENT === 'PRODUCTION' ? 'lols' : error.stack,
 	})
 }
 
